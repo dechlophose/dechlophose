@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Dechlophose — OSINT & защита</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            color: #111111;
+        }
+        .heading-font {
+            font-family: 'Unbounded', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+        }
+        .btn-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.9rem 1.5rem;
+            background: #111111;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            border: 1px solid #111111;
+            text-decoration: none;
+            border-radius: 0px;
+        }
+        .btn-action:hover {
+            background: #333333;
+            transform: translateY(-3px);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #111111;
+        }
+        .btn-outline:hover {
+            background: #111111;
+            color: white;
+        }
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .mission-text {
+            writing-mode: horizontal-tb;
+            text-orientation: mixed;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+        @media (max-width: 768px) {
+            .btn-action {
+                padding: 1rem 1rem;
+                font-size: 0.7rem;
+            }
+            .heading-font {
+                font-size: 2.8rem;
+            }
+            .mobile-stack {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+            .order-img-mobile {
+                order: 1 !important;
+            }
+            .order-txt-mobile {
+                order: 2 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="min-h-screen flex flex-col md:flex-row items-stretch mobile-stack">
+        
+        <!-- ЛЕВАЯ ЧАСТЬ: ТЕКСТ И КНОПКИ -->
+        <section class="w-full md:w-1/2 flex flex-col justify-between py-12 md:py-16 px-6 md:px-12 lg:px-20 order-txt-mobile" style="background-color: #f8f8f8;">
+            <div>
+                <div class="fade-in">
+                    <h1 class="heading-font text-5xl md:text-6xl lg:text-7xl mb-6 leading-[1.1] text-black">
+                        DECHLO<span class="text-neutral-400">PHOSE</span>
+                    </h1>
+                    
+                    <div class="mt-8" style="border-left: 2px solid #cccccc; padding-left: 1.5rem;">
+                        <p class="text-lg md:text-xl font-light text-neutral-600 italic leading-relaxed">
+                            «Цель проекта в защите беззащитных»
+                        </p>
+                    </div>
+                    
+                    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
+                        <a href="https://t.me/+eFdLwfYc1VY5YmFi" class="btn-action">Канал Telegram</a>
+                        <a href="https://t.me/+1YXcqDZlZnY5N2Qy" class="btn-action btn-outline">Чат проекта</a>
+                        <!-- Ссылка на папку "прайс" (кириллица, как в твоей структуре) -->
+                        <a href="прайс/index.html" class="btn-action btn-outline">Прайс-лист</a>
+                        <a href="https://t.me/rethipe" class="btn-action btn-outline">Владелец</a>
+                        <a href="https://t.me/send?start=IV9HaTmKAb5M" class="btn-action btn-outline sm:col-span-2">Личное обучение</a>
+                        <a href="https://t.me/evilfuncases" class="btn-action btn-outline">Кейсы</a>
+                        <a href="https://t.me/utored" class="btn-action btn-outline">Поддержка и менеджер</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 md:hidden text-[9px] uppercase tracking-[0.3em] text-neutral-400">
+                DECHLO<span class="text-neutral-300">PHOSE</span> © 2026
+            </div>
+        </section>
+
+        <!-- ПРАВАЯ ЧАСТЬ: ТЕКСТОВЫЙ БЛОК С МИССИЕЙ И ЦЕЛЬЮ (ВМЕСТО ЛОГО) -->
+        <section class="w-full md:w-1/2 flex items-center justify-center p-8 md:p-16 order-img-mobile" style="background-color: #ffffff;">
+            <div class="max-w-md space-y-8">
+                <div class="border-l-2 border-black pl-6">
+                    <p class="text-xs uppercase tracking-[0.2em] text-neutral-500 mb-2">evilfun</p>
+                    <p class="text-2xl md:text-3xl font-bold leading-tight">
+                        Анонимность — <br>не привилегия, а право.
+                    </p>
+                </div>
+                
+                <div class="space-y-4 text-neutral-600 text-base leading-relaxed mission-text">
+                    <p>
+                        Мы работаем с открытыми источниками, чтобы восстанавливать справедливость там, где традиционные инструменты бессильны.
+                    </p>
+                    <p>
+                        Цифровой след не исчезает бесследно. Наша задача — превратить хаос данных в структурированную доказательную базу.
+                    </p>
+                    <p class="pt-2 text-neutral-400 text-sm">
+                        OSINT · SOCMINT · GEOINT · Цифровая гигиена
+                    </p>
+                </div>
+                
+                <!-- Небольшой декоративный элемент вместо лого -->
+                <div class="pt-6">
+                    <div class="w-12 h-px bg-neutral-300"></div>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-neutral-400 mt-3">
+                        Data integrity
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="hidden md:block fixed bottom-8 left-8 md:left-12 text-[9px] uppercase tracking-[0.4em] text-neutral-400 z-50">
+        [ DECHLO<span class="text-neutral-300">PHOSE</span> // DATA INTEGRITY ] © 2026
+    </footer>
+
+</body>
+</html>
